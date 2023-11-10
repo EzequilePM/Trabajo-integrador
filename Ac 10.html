@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor acumulado</title>
+</head>
+<body>
+    <script>
+        let CASODESIERE = 9999;
+        let ultimoInput = 0;
+        let acumulado = 0;
+        while(ultimoInput != CASODESIERE){
+            ultimoInput = parseInt(prompt('numero:'));
+            acumulado = acumulado + ultimoInput;
+        }
+        if(acumulado == 0){
+            document.writeln('El acumulado es 0');
+        }else{
+            if(acumulado < 0){
+                document.writeln('El acumulado es negativo');
+            }else{
+                document.writeln('El acumulado es positivo');
+            }
+        }
+        
+    </script>
+</body>
+</html>

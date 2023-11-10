@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posision en ejes cartecianos</title>
+</head>
+<body>
+    <script>
+        let quadrant = '';
+        let corInX = parseInt(prompt('Cordenada en X'));
+        let corInY = parseInt(prompt('Cordenada en Y'));
+
+        if(corInX > 0){
+            if(corInY > 0){
+                quadrant = '°1';
+            }else{
+                quadrant = '°3';
+            }
+        }else{
+            if(corInY > 0){
+                quadrant = '°2';
+            }else{
+                quadrant = '°4';
+            }
+        }
+
+        document.write('El punto esta en el '+ quadrant);
+    </script>
+
+</body>
+
+
+</html>

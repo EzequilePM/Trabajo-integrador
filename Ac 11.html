@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senso</title>
+</head>
+<body>
+    <script>
+        let dni;
+        let edad;
+        let sexo;
+        let cantidadDePersonas = 0;
+        let cantidadDeHombres = 0;
+        let cantidadDeMujertes = 0;
+        let cantidadDeHombresEnEdad = 0;
+
+        do{
+            dni = prompt('Ingrese el dni: ');
+            if (dni == 0){
+                break;
+            }
+            edad = prompt('Edad: ');
+            sexo = prompt('Sexo: ')
+            
+            cantidadDePersonas = cantidadDePersonas + 1;
+            if (sexo == 'M'){
+                cantidadDeHombres = cantidadDeHombres + 1;
+                if (edad >= 16 & edad <= 65){
+                    cantidadDeHombresEnEdad = cantidadDeHombresEnEdad + 1;
+                }
+            }else{
+                cantidadDeMujertes = cantidadDeMujertes + 1;
+            }
+
+            
+        }while(dni != 0)
+        document.writeln('Cantidad de personas en total: ' + cantidadDePersonas + '.');
+        document.writeln('Cantidad de hombres: ' + cantidadDeHombres + '.');
+        document.writeln('Cantidad de muejeres: ' + cantidadDeMujertes + '.');
+        document.writeln('Cantidad de hombres entre 16 y 65 años: ' + cantidadDeHombresEnEdad + '.');
+    </script>
+</body>
+</html>

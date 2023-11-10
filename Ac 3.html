@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        let primerNumero = parseInt(prompt('Ingrese el primer numero'));
+        let segundoNumero = parseInt(prompt('Ingrese el segundo numero'));
+        let tercerNumero = parseInt(prompt('Ingrese el tercer numero'));
+        let msg
+
+        if (primerNumero <= segundoNumero){
+            if (segundoNumero >= tercerNumero){
+                
+                msg = 'El segundo numero es le mallor de los tres';
+
+            }else{
+
+                msg = 'El tercer numro es el mayor de los tres';
+
+            }
+        }else{
+            if (primerNumero >= tercerNumero){
+                
+                msg = 'El primer numero es le mallor de los tres';
+
+            }else{
+
+                msg = 'El tercer numro es el mayor de los tres';
+
+            } 
+        }
+
+        document.writeln(msg)
+    </script>
+</html>
